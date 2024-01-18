@@ -34,7 +34,7 @@ Note: I couldn't get the Docker service to work correctly because i had TensorFl
 	"detail": "Invalid CUDA 'device=0' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.\n\ntorch.cuda.is_available(): False\ntorch.cuda.device_count(): 0\nos.environ['CUDA_VISIBLE_DEVICES']: None\nSee https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.\n"
 }`
 
-So you will need to run at locally.
+So you will need to run locally.
 
 To install Python dependencies:
 `pip install --no-cache-dir -r requirements.txt`
