@@ -1,6 +1,5 @@
 from ultralytics import YOLO
-import pandas as pd
-import os
+import torch
 
 class ModelYOLO:
     def __init__(self, model_path, device='cuda'):
@@ -9,9 +8,11 @@ class ModelYOLO:
         
     def start(self, device):   
         if device == 'cuda':
-            import torch
             torch.cuda.set_device(0)
             self.model.to(device)
+        else:
+            print("Not using CUDA")
+            self.model.to(torch.device('cpu'))
         self.model.fuse()
         self.dict_classes = self.model.model.names
         self.class_ids = [2, 3, 5, 7, 67] 
