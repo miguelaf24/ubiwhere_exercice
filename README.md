@@ -10,8 +10,7 @@ Before running the main program, it is necessary to create masks for the parking
 
 Run the script: `python ./utils/mask_maker.py path_image`
 
-![example_mask_maker](https://github.com/miguelaf24/ubiwhere_exercice/docs/mask_maker.png)
-
+![example_mask_maker](https://raw.githubusercontent.com/miguelaf24/ubiwhere_exercice/main/docs/mask_maker.png)
 To create the masks for the designated areas, one must utilize mouse clicks. 
 
 Save each parking space individually. 
@@ -22,3 +21,13 @@ Upon completion press "Esc", rename the files with the desired parking space ID.
 
 ## Step 2: Build and Run Docker
 
+
+`docker-compose build`
+
+`docker-compose up`
+
+## Step 3: Send Images to Service
+`Insomnia` to interact with the API and 
+
+
+[Ultralytics](https://docs.ultralytics.com/)
