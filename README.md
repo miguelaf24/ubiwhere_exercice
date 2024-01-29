@@ -1,4 +1,4 @@
-# Exercice Ubiwhere - Parking Detection Project
+# Exercise Ubiwhere - Parking Detection Project
 
 This project was developed as part of a computer vision exercise for Ubiwhere, focusing on the detection of occupied parking spaces.
 
